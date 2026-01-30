@@ -26,7 +26,6 @@ header{
 header h1{
   margin:0;
   font-size:42px;
-  letter-spacing:1px;
 }
 header h2{
   font-weight:normal;
@@ -76,10 +75,14 @@ nav a{
   padding:25px;
   text-align:center;
   box-shadow:0 8px 20px rgba(0,0,0,.12);
+  color:#222;
 }
 .highlight{
   background:#0f2027;
   color:#fff;
+}
+.highlight .card{
+  color:#222; /* ✅ TRUST TEXT FIX */
 }
 .callnow{
   margin-top:30px;
@@ -118,13 +121,12 @@ footer{
 
 <body>
 
-<header id="home">
+<header>
   <h1>AMRUT FINSERV</h1>
   <h2>Home Loan • Business Loan • LAP • Project Finance</h2>
-  <p>Trusted Loan & Financial Solutions Across Gujarat, Mumbai & Rajasthan</p>
-
+  <p>Trusted Loan & Financial Solutions in Gujarat, Mumbai & Rajasthan</p>
   <div class="callnow">
-    <a href="tel:9016086772">📞 Call Now for Free Consultation</a>
+    <a href="tel:9016086772">📞 Call Now</a>
   </div>
 </header>
 
@@ -140,20 +142,20 @@ footer{
 <div class="section" id="about">
   <h2>About Amrut Finserv</h2>
   <p>
-    Amrut Finserv is a professional financial consultancy providing Home Loan,
-    Business Loan, Loan Against Property and Project Finance solutions.
-    We serve clients across Surat, Ahmedabad, Vadodara, Rajkot, Himatnagar,
-    Sabarkantha, Vapi, Mumbai and Rajasthan with a transparent and fast approval process.
+    Amrut Finserv is a trusted financial consultancy providing Home Loan,
+    Business Loan, Loan Against Property and Project Finance solutions across
+    Surat, Ahmedabad, Vadodara, Rajkot, Himatnagar, Sabarkantha, Vapi,
+    Mumbai and Rajasthan.
   </p>
 </div>
 
 <div class="section" id="services">
-  <h2>Our Loan Services</h2>
+  <h2>Our Services</h2>
   <div class="services">
-    <div class="card">🏠 <b>Home Loan</b><br>For salaried & self-employed</div>
-    <div class="card">🏢 <b>Loan Against Property</b><br>Residential & commercial</div>
-    <div class="card">💼 <b>Business Loan</b><br>MSME & professionals</div>
-    <div class="card">🏗 <b>Project Finance</b><br>Builder & developer funding</div>
+    <div class="card">🏠 <b>Home Loan</b><br>Best rates & quick approval</div>
+    <div class="card">🏢 <b>Loan Against Property</b><br>Residential & Commercial</div>
+    <div class="card">💼 <b>Business Loan</b><br>MSME & Professionals</div>
+    <div class="card">🏗 <b>Project Finance</b><br>Builder Funding</div>
   </div>
 </div>
 
@@ -170,26 +172,17 @@ footer{
 <div class="section" id="process">
   <h2>Loan Process</h2>
   <div class="services">
-    <div class="card">1️⃣ Submit Enquiry</div>
-    <div class="card">2️⃣ Document Verification</div>
-    <div class="card">3️⃣ Bank / NBFC Approval</div>
-    <div class="card">4️⃣ Loan Disbursement</div>
+    <div class="card">1️⃣ Enquiry</div>
+    <div class="card">2️⃣ Documents Check</div>
+    <div class="card">3️⃣ Bank Approval</div>
+    <div class="card">4️⃣ Disbursement</div>
   </div>
 </div>
 
-<div class="section">
-  <h2>Service Locations</h2>
-  <p>
-    We provide loan services in <b>Surat, Ahmedabad, Vadodara, Rajkot, Himatnagar,
-    Sabarkantha, Vapi</b> and other cities of Gujarat.
-    We also serve clients in <b>Mumbai</b> and <b>Rajasthan</b>.
-  </p>
-</div>
-
 <div class="section" id="enquiry">
-  <h2>Quick Loan Enquiry</h2>
+  <h2>Quick Enquiry</h2>
   <form onsubmit="sendWhatsApp(); return false;"
-  style="max-width:500px;margin:auto;background:white;padding:25px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.15);">
+  style="max-width:500px;margin:auto;background:white;padding:25px;border-radius:14px;">
     <input id="name" type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin:8px 0;">
     <input id="mobile" type="tel" placeholder="Mobile Number" required style="width:100%;padding:10px;margin:8px 0;">
     <select id="loan" style="width:100%;padding:10px;margin:8px 0;">
