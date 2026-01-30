@@ -5,8 +5,8 @@
 <title>Amrut Finserv | Loan & Financial Services</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Amrut Finserv provides Home Loan, Loan Against Property, Business Loan and Project Finance services across Gujarat. Trusted financial solutions.">
-<meta name="keywords" content="Amrut Finserv, Home Loan Gujarat, LAP Loan, Business Loan, Project Finance">
+<meta name="description" content="Amrut Finserv provides Home Loan, Business Loan, Loan Against Property and Project Finance services across Gujarat.">
+<meta name="keywords" content="Amrut Finserv, Home Loan Gujarat, Business Loan, LAP Loan">
 <meta name="author" content="Daksh Barot">
 <meta name="robots" content="index, follow">
 
@@ -14,32 +14,31 @@
 body{
   margin:0;
   font-family:Segoe UI, Arial, sans-serif;
-  background:#ffffff;
+  background:linear-gradient(180deg,#f4f7fb,#eef2f7);
   color:#222;
 }
 header{
-  background:#ffffff;
-  color:#111;
-  padding:40px 15px;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:white;
+  padding:45px 15px;
   text-align:center;
-  border-bottom:1px solid #eee;
 }
 header h1{
   margin:0;
-  font-size:38px;
-  color:#000;
+  font-size:40px;
+  letter-spacing:1px;
 }
 header h2{
   font-weight:normal;
+  margin:12px 0;
   font-size:18px;
-  margin:10px 0;
-  color:#555;
+  color:#dfefff;
 }
 header p{
-  color:#777;
+  color:#e0e0e0;
 }
 nav{
-  background:#000;
+  background:#111;
   padding:12px;
   text-align:center;
   position:sticky;
@@ -53,13 +52,14 @@ nav a{
   font-weight:600;
 }
 .section{
-  padding:45px 20px;
+  padding:50px 20px;
   max-width:1100px;
   margin:auto;
 }
 .section h2{
   text-align:center;
   margin-bottom:25px;
+  color:#0f2027;
 }
 .section p{
   text-align:center;
@@ -74,14 +74,27 @@ nav a{
   margin-top:30px;
 }
 .card{
-  background:#fff;
-  border-radius:12px;
+  background:white;
+  border-radius:14px;
   padding:25px;
   text-align:center;
-  box-shadow:0 6px 14px rgba(0,0,0,.1);
+  box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+.callnow{
+  margin-top:30px;
+  text-align:center;
+}
+.callnow a{
+  background:#ffcc00;
+  color:#000;
+  padding:14px 30px;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:bold;
+  font-size:18px;
 }
 footer{
-  background:#000;
+  background:#111;
   color:#fff;
   text-align:center;
   padding:22px;
@@ -108,11 +121,16 @@ footer{
   <h1>AMRUT FINSERV</h1>
   <h2>Home Loan & Business Loan Services in Gujarat</h2>
   <p>Trusted Loan & Financial Solutions</p>
+
+  <div class="callnow">
+    <a href="tel:9016086772">📞 Call Me Now</a>
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#services">Services</a>
+  <a href="#why">Why Choose</a>
   <a href="#enquiry">Enquiry</a>
   <a href="#contact">Contact</a>
 </nav>
@@ -128,10 +146,20 @@ footer{
 <div class="section" id="services">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card">🏠 <b>Home Loan</b><br>Best rates for salaried & self-employed</div>
+    <div class="card">🏠 <b>Home Loan</b><br>Best interest rates</div>
     <div class="card">🏢 <b>Loan Against Property</b><br>Residential & commercial</div>
-    <div class="card">💼 <b>Business Loan</b><br>MSME & professional funding</div>
-    <div class="card">🏗 <b>Project Finance</b><br>Builder & construction loans</div>
+    <div class="card">💼 <b>Business Loan</b><br>MSME & professionals</div>
+    <div class="card">🏗 <b>Project Finance</b><br>Builder funding</div>
+  </div>
+</div>
+
+<div class="section" id="why">
+  <h2>Why Choose Amrut Finserv</h2>
+  <div class="services">
+    <div class="card">✔ Experienced Financial Advisors</div>
+    <div class="card">✔ Bank & NBFC Tie-Ups</div>
+    <div class="card">✔ Fast Approval Process</div>
+    <div class="card">✔ Transparent & Trusted</div>
   </div>
 </div>
 
@@ -139,7 +167,7 @@ footer{
   <h2>Quick Enquiry</h2>
 
   <form onsubmit="sendWhatsApp(); return false;"
-  style="max-width:500px;margin:auto;background:#fff;padding:25px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,.15);">
+  style="max-width:500px;margin:auto;background:white;padding:25px;border-radius:14px;box-shadow:0 8px 20px rgba(0,0,0,.15);">
 
     <input id="name" type="text" placeholder="Your Name" required style="width:100%;padding:10px;margin:8px 0;">
     <input id="mobile" type="tel" placeholder="Mobile Number" required style="width:100%;padding:10px;margin:8px 0;">
@@ -151,10 +179,16 @@ footer{
       <option>Project Finance</option>
     </select>
 
-    <button type="submit" style="width:100%;padding:12px;background:#000;color:#fff;border:none;font-weight:bold;">
+    <button type="submit" style="width:100%;padding:12px;background:#0f2027;color:white;border:none;font-weight:bold;">
       Send on WhatsApp
     </button>
   </form>
+</div>
+
+<div class="section">
+  <h2>Our Location</h2>
+  <iframe src="https://maps.google.com/maps?q=Gujarat&t=&z=7&ie=UTF8&iwloc=&output=embed"
+  width="100%" height="300" style="border:0;border-radius:14px;"></iframe>
 </div>
 
 <div class="section" id="contact">
