@@ -122,15 +122,8 @@ padding:30px;
 text-align:center;
 box-shadow:0 12px 35px rgba(0,0,0,.15)
 }
-.counter h3{
-font-size:34px;
-margin:0;
-color:#1a2a6c
-}
-.counter p{
-margin:8px 0 0;
-color:#111
-}
+.counter h3{font-size:34px;margin:0;color:#1a2a6c}
+.counter p{margin:8px 0 0}
 
 /* LOGO SLIDER */
 .logos{
@@ -144,18 +137,8 @@ background:#fff;
 padding:20px;
 border-radius:14px;
 font-weight:700;
-color:#0f172a;
-text-align:center;
 box-shadow:0 10px 25px rgba(0,0,0,.12)
 }
-
-/* ====== VISIBILITY FIX (ONLY ADDITION) ====== */
-.highlight .counter,
-.highlight .logos div{
-background:#ffffff !important;
-color:#0f172a !important;
-}
-/* ========================================= */
 
 /* FORM */
 form{
@@ -206,7 +189,108 @@ box-shadow:0 8px 20px rgba(0,0,0,.3)
 
 <body>
 
-<!-- BODY SAME AS YOU SENT (NO CHANGE) -->
+<header>
+  <div class="logo">AMRUT FINSERV</div>
+  <h2>Home Loan • Business Loan • LAP • Project Finance</h2>
+  <p>Trusted Financial Solutions Across Gujarat, Mumbai & Rajasthan</p>
+  <div class="callnow">
+    <a href="tel:9016086772">📞 Call Now</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#trust">Trust</a>
+  <a href="#cities">Cities</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="section" id="about">
+  <h2>About Amrut Finserv</h2>
+  <p>
+    Amrut Finserv is a professional loan consultancy providing fast,
+    transparent and reliable Home Loan, Business Loan, Loan Against Property
+    and Project Finance solutions across major cities of India.
+  </p>
+</div>
+
+<div class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card"><span>🏠</span><b>Home Loan</b><br>Lowest interest rates</div>
+    <div class="card"><span>🏢</span><b>Loan Against Property</b><br>Residential & Commercial</div>
+    <div class="card"><span>💼</span><b>Business Loan</b><br>MSME & Professionals</div>
+    <div class="card"><span>🏗</span><b>Project Finance</b><br>Builder Funding</div>
+  </div>
+</div>
+
+<div class="section highlight" id="trust">
+  <h2>Why Clients Trust Us</h2>
+
+  <div class="services">
+    <div class="card"><span>🏦</span>50+ Banks & NBFC Tie-ups</div>
+    <div class="card"><span>⚡</span>Fast Approval</div>
+    <div class="card"><span>🔍</span>100% Transparent</div>
+    <div class="card"><span>🤝</span>Expert Advisors</div>
+  </div>
+
+  <div class="counters">
+    <div class="counter"><h3>50+</h3><p>Banks & NBFCs</p></div>
+    <div class="counter"><h3>1000+</h3><p>Happy Clients</p></div>
+    <div class="counter"><h3>10+</h3><p>Years Experience</p></div>
+    <div class="counter"><h3>₹500Cr+</h3><p>Loan Disbursed</p></div>
+  </div>
+
+  <div class="logos">
+    <div>HDFC</div><div>ICICI</div><div>SBI</div><div>Axis</div>
+    <div>PNB</div><div>BOB</div><div>Yes Bank</div><div>NBFCs</div>
+  </div>
+</div>
+
+<div class="section" id="cities">
+  <h2>Areas We Serve</h2>
+  <p>
+    Surat, Ahmedabad, Vadodara, Rajkot, Himatnagar, Sabarkantha, Vapi,
+    Mumbai and entire Rajasthan.
+  </p>
+</div>
+
+<div class="section" id="contact">
+  <h2>Quick Enquiry</h2>
+  <form onsubmit="sendWhatsApp();return false;" style="max-width:500px;margin:auto">
+    <input id="name" placeholder="Your Name" required>
+    <input id="mobile" placeholder="Mobile Number" required>
+    <select id="loan">
+      <option>Home Loan</option>
+      <option>Business Loan</option>
+      <option>Loan Against Property</option>
+      <option>Project Finance</option>
+    </select>
+    <button type="submit">Send on WhatsApp</button>
+  </form>
+</div>
+
+<footer>
+  © 2026 Amrut Finserv | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919016086772" target="_blank">WhatsApp</a>
+
+<script>
+function sendWhatsApp(){
+  var n=name.value,m=mobile.value,l=loan.value;
+  window.open("https://wa.me/919016086772?text=Name:"+n+"%0aMobile:"+m+"%0aLoan:"+l);
+}
+const cards=document.querySelectorAll('.card');
+window.addEventListener('scroll',()=>{
+  cards.forEach(c=>{
+    if(c.getBoundingClientRect().top < window.innerHeight-50){
+      c.classList.add('show');
+    }
+  });
+});
+</script>
 
 </body>
 </html>
