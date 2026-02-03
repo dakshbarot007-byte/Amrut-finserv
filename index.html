@@ -125,7 +125,7 @@ box-shadow:0 12px 35px rgba(0,0,0,.15)
 .counter h3{font-size:34px;margin:0;color:#1a2a6c}
 .counter p{margin:8px 0 0}
 
-/* LOGO SLIDER */
+/* LOGOS */
 .logos{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
@@ -240,57 +240,4 @@ box-shadow:0 8px 20px rgba(0,0,0,.3)
     <div class="counter"><h3>1000+</h3><p>Happy Clients</p></div>
     <div class="counter"><h3>10+</h3><p>Years Experience</p></div>
     <div class="counter"><h3>₹500Cr+</h3><p>Loan Disbursed</p></div>
-  </div>
-
-  <div class="logos">
-    <div>HDFC</div><div>ICICI</div><div>SBI</div><div>Axis</div>
-    <div>PNB</div><div>BOB</div><div>Yes Bank</div><div>NBFCs</div>
-  </div>
-</div>
-
-<div class="section" id="cities">
-  <h2>Areas We Serve</h2>
-  <p>
-    Surat, Ahmedabad, Vadodara, Rajkot, Himatnagar, Sabarkantha, Vapi,
-    Mumbai and entire Rajasthan.
-  </p>
-</div>
-
-<div class="section" id="contact">
-  <h2>Quick Enquiry</h2>
-  <form onsubmit="sendWhatsApp();return false;" style="max-width:500px;margin:auto">
-    <input id="name" placeholder="Your Name" required>
-    <input id="mobile" placeholder="Mobile Number" required>
-    <select id="loan">
-      <option>Home Loan</option>
-      <option>Business Loan</option>
-      <option>Loan Against Property</option>
-      <option>Project Finance</option>
-    </select>
-    <button type="submit">Send on WhatsApp</button>
-  </form>
-</div>
-
-<footer>
-  © 2026 Amrut Finserv | All Rights Reserved
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919016086772" target="_blank">WhatsApp</a>
-
-<script>
-function sendWhatsApp(){
-  var n=name.value,m=mobile.value,l=loan.value;
-  window.open("https://wa.me/919016086772?text=Name:"+n+"%0aMobile:"+m+"%0aLoan:"+l);
-}
-const cards=document.querySelectorAll('.card');
-window.addEventListener('scroll',()=>{
-  cards.forEach(c=>{
-    if(c.getBoundingClientRect().top < window.innerHeight-50){
-      c.classList.add('show');
-    }
-  });
-});
-</script>
-
-</body>
-</html>
+    
