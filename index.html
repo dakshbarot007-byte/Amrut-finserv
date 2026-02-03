@@ -6,14 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Amrut Finserv offers Home Loan, Business Loan, Loan Against Property & Project Finance across Gujarat, Mumbai and Rajasthan with 50+ Bank & NBFC tie-ups.">
-<meta name="keywords" content="Home Loan Surat, Business Loan Ahmedabad, LAP Gujarat, Project Finance Mumbai Rajasthan">
 <meta name="author" content="Daksh Barot">
-<meta name="robots" content="index, follow">
 
 <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135706.png">
 
 <style>
-body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#f4f6fb;color:#222}
+body{
+margin:0;
+font-family:'Segoe UI',Arial,sans-serif;
+background:#f4f6fb;
+color:#222
+}
 
 /* HEADER */
 header{
@@ -28,7 +31,7 @@ text-align:center
 }
 .logo{font-size:42px;font-weight:900;letter-spacing:2px}
 header h2{margin:15px 0;font-weight:400}
-header p{font-size:18px;opacity:.9}
+header p{font-size:18px}
 .callnow a{
 display:inline-block;
 margin-top:25px;
@@ -77,7 +80,7 @@ line-height:1.8;
 font-size:17px
 }
 
-/* CARDS */
+/* SERVICES */
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -94,21 +97,16 @@ opacity:0;
 transform:translateY(40px)
 }
 .card.show{opacity:1;transform:translateY(0)}
-.card:hover{transform:translateY(-10px) scale(1.03)}
 .card span{font-size:40px;display:block;margin-bottom:15px}
 
-/* TRUST */
+/* TRUST SECTION */
 .highlight{
-background:
-linear-gradient(rgba(26,42,108,.9),rgba(26,42,108,.9)),
-url("https://images.unsplash.com/photo-1556742400-b5f6e2d8f7b8");
-background-size:cover;
+background:linear-gradient(135deg,#1a2a6c,#2a5298);
 color:#fff
 }
 .highlight h2{color:#fff}
-.highlight .card{color:#222}
 
-/* COUNTERS */
+/* COUNTERS FIX */
 .counters{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -116,28 +114,32 @@ gap:25px;
 margin-top:40px
 }
 .counter{
-background:#fff;
+background:#ffffff;
 border-radius:18px;
 padding:30px;
 text-align:center;
 box-shadow:0 12px 35px rgba(0,0,0,.15)
 }
-.counter h3{font-size:34px;margin:0;color:#1a2a6c}
-.counter p{margin:8px 0 0}
+.counter h3{
+font-size:36px;
+margin:0;
+color:#1a2a6c
+}
+.counter p{margin-top:8px;color:#333}
 
-/* LOGO SLIDER */
+/* BANK LOGOS */
 .logos{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-gap:25px;
-margin-top:40px
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:30px;
+margin-top:50px
 }
-.logos div{
+.logos img{
 background:#fff;
-padding:20px;
+padding:18px;
 border-radius:14px;
-font-weight:700;
-box-shadow:0 10px 25px rgba(0,0,0,.12)
+height:55px;
+box-shadow:0 10px 25px rgba(0,0,0,.15)
 }
 
 /* FORM */
@@ -202,58 +204,45 @@ box-shadow:0 8px 20px rgba(0,0,0,.3)
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#trust">Trust</a>
-  <a href="#cities">Cities</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <div class="section" id="about">
   <h2>About Amrut Finserv</h2>
   <p>
-    Amrut Finserv is a professional loan consultancy providing fast,
-    transparent and reliable Home Loan, Business Loan, Loan Against Property
-    and Project Finance solutions across major cities of India.
+    Professional loan consultancy providing Home Loan, Business Loan,
+    Loan Against Property and Project Finance across India.
   </p>
 </div>
 
 <div class="section" id="services">
   <h2>Our Services</h2>
   <div class="services">
-    <div class="card"><span>🏠</span><b>Home Loan</b><br>Lowest interest rates</div>
-    <div class="card"><span>🏢</span><b>Loan Against Property</b><br>Residential & Commercial</div>
-    <div class="card"><span>💼</span><b>Business Loan</b><br>MSME & Professionals</div>
-    <div class="card"><span>🏗</span><b>Project Finance</b><br>Builder Funding</div>
+    <div class="card"><span>🏠</span>Home Loan</div>
+    <div class="card"><span>🏢</span>Loan Against Property</div>
+    <div class="card"><span>💼</span>Business Loan</div>
+    <div class="card"><span>🏗</span>Project Finance</div>
   </div>
 </div>
 
 <div class="section highlight" id="trust">
-  <h2>Why Clients Trust Us</h2>
-
-  <div class="services">
-    <div class="card"><span>🏦</span>50+ Banks & NBFC Tie-ups</div>
-    <div class="card"><span>⚡</span>Fast Approval</div>
-    <div class="card"><span>🔍</span>100% Transparent</div>
-    <div class="card"><span>🤝</span>Expert Advisors</div>
-  </div>
+  <h2>Trusted by Clients & Banks</h2>
 
   <div class="counters">
-    <div class="counter"><h3>50+</h3><p>Banks & NBFCs</p></div>
     <div class="counter"><h3>1000+</h3><p>Happy Clients</p></div>
+    <div class="counter"><h3>50+</h3><p>Banks & NBFCs</p></div>
     <div class="counter"><h3>10+</h3><p>Years Experience</p></div>
     <div class="counter"><h3>₹500Cr+</h3><p>Loan Disbursed</p></div>
   </div>
 
   <div class="logos">
-    <div>HDFC</div><div>ICICI</div><div>SBI</div><div>Axis</div>
-    <div>PNB</div><div>BOB</div><div>Yes Bank</div><div>NBFCs</div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/HDFC_Bank_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/ICICI_Bank_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/SBI-logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Axis_Bank_logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Punjab_National_Bank_logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Bank_of_Baroda_logo.svg">
   </div>
-</div>
-
-<div class="section" id="cities">
-  <h2>Areas We Serve</h2>
-  <p>
-    Surat, Ahmedabad, Vadodara, Rajkot, Himatnagar, Sabarkantha, Vapi,
-    Mumbai and entire Rajasthan.
-  </p>
 </div>
 
 <div class="section" id="contact">
@@ -264,7 +253,7 @@ box-shadow:0 8px 20px rgba(0,0,0,.3)
     <select id="loan">
       <option>Home Loan</option>
       <option>Business Loan</option>
-      <option>Loan Against Property</option>
+      <option>LAP</option>
       <option>Project Finance</option>
     </select>
     <button type="submit">Send on WhatsApp</button>
@@ -279,16 +268,16 @@ box-shadow:0 8px 20px rgba(0,0,0,.3)
 
 <script>
 function sendWhatsApp(){
-  var n=name.value,m=mobile.value,l=loan.value;
-  window.open("https://wa.me/919016086772?text=Name:"+n+"%0aMobile:"+m+"%0aLoan:"+l);
+var n=name.value,m=mobile.value,l=loan.value;
+window.open("https://wa.me/919016086772?text=Name:"+n+"%0aMobile:"+m+"%0aLoan:"+l);
 }
 const cards=document.querySelectorAll('.card');
 window.addEventListener('scroll',()=>{
-  cards.forEach(c=>{
-    if(c.getBoundingClientRect().top < window.innerHeight-50){
-      c.classList.add('show');
-    }
-  });
+cards.forEach(c=>{
+if(c.getBoundingClientRect().top < window.innerHeight-50){
+c.classList.add('show');
+}
+});
 });
 </script>
 
